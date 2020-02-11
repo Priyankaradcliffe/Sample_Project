@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [default-suite]">
+  <test thread-count="5" name="default-test1(failed)">
+    <classes>
+      <class name="banking_Project_Admin.Employee">
+        <methods>
+          <include name="Update_Employee_Webtable"/>
+          <include name="beforeMethod"/>
+          <include name="Click_Deletion_Employee_Btn_WebTable"/>
+          <include name="verify_Role_Availability_At_WebTable"/>
+          <include name="Admin_login"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- banking_Project_Admin.Employee -->
+      <class name="banking_Project_Admin.Role">
+        <methods>
+          <include name="Click_Deletion_Btn_WebTable"/>
+          <include name="beforeMethod"/>
+          <include name="verify_Role_Availability_At_WebTable"/>
+          <include name="Update_Role_Webtable"/>
+          <include name="Admin_login"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- banking_Project_Admin.Role -->
+      <class name="banking_Project_Admin.branch">
+        <methods>
+          <include name="Admin_login"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="Update_Branch_Webtable"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="verify_branch_Availability_At_WebTable"/>
+        </methods>
+      </class> <!-- banking_Project_Admin.branch -->
+    </classes>
+  </test> <!-- default-test1(failed) -->
+</suite> <!-- Failed suite [default-suite] -->
